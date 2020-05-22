@@ -20,6 +20,7 @@ apt-get upgrade -y
 tee /etc/network/interfaces.d/eth0 << EOF
 allow-hotplug eth0
 iface eth0 inet dhcp
+iface eth0 inet6 dhcp
 EOF
 
 # configure and enable resolved
